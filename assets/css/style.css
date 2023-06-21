@@ -7,12 +7,12 @@
 }
 
 body {
-    font-family: lato, sans-serif;
+    font-family: Lato, sans-serif;
     font-weight: 300;
     color: #3a3a3a;
 }
 
-/*  headings and logo */
+/* headings and logo */
 
 h1,
 h2 {
@@ -28,7 +28,7 @@ h2 {
     margin-left: 30px;
 }
 
-/*  navigation links */
+/* navigation links */
 
 #menu {
     font-size: 110%;
@@ -59,7 +59,7 @@ h2 {
     border-bottom: 1px solid #3a3a3a;
 }
 
-/*  hero image */
+/* hero image and cover text */
 
 #hero-outer {
     height: 600px;
@@ -71,7 +71,7 @@ h2 {
 
 #cover-text,
 #cover-text h2 {
-    color: #ffffff;
+    color: #fff;
 }
 
 #hero-image {
@@ -126,14 +126,12 @@ h2 {
     padding-top: 30px;
     width: 33%;
     float: left;
-
 }
 
 #right-about {
     padding-top: 30px;
     width: 33%;
     float: right;
-
 }
 
 #center-about {
@@ -144,18 +142,10 @@ h2 {
 hr {
     border-top: 1px solid #3a3a3a;
     width: 100%;
-    margin: 5px;
+    margin: 5px 0;
 }
 
 .left-about-heading {
-    width: 60%;
-    float: left;
-    line-height: 20px;
-    clear: both;
-    margin-bottom: 50px;
-}
-
-.right-about-heading {
     width: 60%;
     float: right;
     line-height: 20px;
@@ -163,9 +153,16 @@ hr {
     margin-bottom: 50px;
 }
 
+.right-about-heading {
+    width: 60%;
+    float: left;
+    line-height: 20px;
+    clear: both;
+    margin-bottom: 50px;
+}
+
 .right-about-heading h2 {
     text-align: right;
-
 }
 
 .right-about-heading p {
@@ -195,8 +192,10 @@ hr {
     border-radius: 50%;
 }
 
+/* event times */
+
 #times {
-    background-image: url('../images/dublin-city.webp');
+    background-image: url('../images/times-background.webp');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -220,9 +219,10 @@ hr {
     color: #fafafa;
 }
 
+/* footer */
+
 footer {
     height: 150px;
-
 }
 
 .social-networks {
@@ -240,6 +240,8 @@ footer {
     color: #3a3a3a;
 }
 
+/* gallery */
+
 #photos {
     clear: both;
     line-height: 0;
@@ -251,12 +253,14 @@ footer {
     width: 100%;
 }
 
-@media screen and (max:width: 1200px) {
+/* Media queries */
+
+/* For larger to medium screens size from 1200px wide and down */
+@media screen and (max-width: 1200px) {
     #club-ethos {
         width: 65%;
         height: 1200px;
         margin: 0 auto;
-
     }
 
     #welcome {
@@ -278,11 +282,19 @@ footer {
         padding: 0;
     }
 
+    #times>div {
+        width: 100%;
+        clear: both;
+        height: 150px;
+        padding: 0;
+    }
+
     hr {
         display: none;
     }
 }
 
+/* For medium screen sizes from 950px wide and down */
 @media screen and (max-width: 950px) {
 
     #menu {
@@ -320,4 +332,14 @@ footer {
         padding: 0 20px;
     }
 
+    #photos {
+        column-count: 3;
+    }
+}
+
+/* For small screen sizes 800px and down */
+@media screen and (max-width: 800px) {
+    #photos {
+        column-count: 2;
+    }
 }
